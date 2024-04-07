@@ -30,6 +30,8 @@ struct ContentView: View {
                 
                 HStack {
                     TextField("Enter a to-do item", text: $searchText)
+                    Text("ADD")
+                        .foregroundColor(.blue)
                 }
                 .padding(20)
             }
