@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct ToDoItem_Check_: View {
+    
+    let listText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            Image(systemName: "checkmark.circle")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 25)
+                .foregroundColor(.blue)
+                .padding(.horizontal, 10)
+            Text(listText)
+        }
+        .padding(5)
     }
 }
 
 #Preview {
-    ToDoItem_Check_()
+    ToDoItem_Check_(listText: "Study for Chemistry quiz")
 }
