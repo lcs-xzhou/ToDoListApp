@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandingView: View {
     
     // MARK: Stored properties
     
@@ -16,15 +16,16 @@ struct ContentView: View {
     
     // The search text
     @State var searchText = ""
+    
+    // The list of to-do items
+    @State var todos: [TodoItem] = exampleItems
 
     // MARK: Computed properties
     var body: some View {
         NavigationView {
             VStack {
-                List {
-                    ItemView(currentItem: firstItem)
-                    ItemView(currentItem: secondItem)
-                    ItemView(currentItem: thirdItem)
+                List(todos) {
+                    todo in ItemView(currentItem: todo)
                 }
                 .searchable(text: $searchText)
                 
@@ -44,5 +45,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    LandingView()
 }
