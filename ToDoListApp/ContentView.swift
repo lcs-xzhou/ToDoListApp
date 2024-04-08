@@ -22,16 +22,18 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 List {
-                    ToDoItem(listText: "Study for Chemistry quiz")
-                    ToDoItem_Check_(listText: "Finish Computer Science assignment")
-                    ToDoItem(listText: "Go for a run around campus")
+                    Text("Study for Chemistry quiz")
+                    Text("Finish Computer Science assignment")
+                    Text("Go for a run around campus")
                 }
                 .searchable(text: $searchText)
                 
                 HStack {
-                    TextField("Enter a to-do item", text: $searchText)
-                    Text("ADD")
-                        .foregroundColor(.blue)
+                    TextField("Enter a to-do item", text: $newItemDescription)
+                    Button("ADD") {
+                        // Add the new to-do item
+                    }
+                    .font(.caption)
                 }
                 .padding(20)
             }
