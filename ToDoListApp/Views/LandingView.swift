@@ -24,14 +24,18 @@ struct LandingView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List(todos) {
-                    todo in ItemView(currentItem: todo)
+                List($todos) {
+                    $todo in ItemView(currentItem: todo)
                     // Delete a to-do item
                         .swipeActions {
                             Button("Delete", role: .destructive, action: {
                                 delete(todo)
                             }
                             )
+                        }
+                    // Tap to mark as done
+                        .onTapGesture {
+                            todo.done.toggle()
                         }
                 }
                 .searchable(text: $searchText)
