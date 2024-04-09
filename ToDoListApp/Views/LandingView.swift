@@ -28,9 +28,7 @@ struct LandingView: View {
                     $todo in ItemView(currentItem: $todo)
                     // Delete a to-do item
                         .swipeActions {
-                            Button("Delete", role: .destructive, action: {
-                                delete(todo)
-                            }
+                            Button("Delete", role: .destructive, action: {delete(todo)}
                             )
                         }
                 }
