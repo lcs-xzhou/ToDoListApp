@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D1C3B402BC46D4700E8E3C1 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C3B3F2BC46D4700E8E3C1 /* ItemView.swift */; };
 		2D1C3B422BC46E2600E8E3C1 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C3B412BC46E2600E8E3C1 /* TodoItem.swift */; };
+		2D1C3B442BC5CCFD00E8E3C1 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C3B432BC5CCFD00E8E3C1 /* Functions.swift */; };
 		2DFE15352BC034FD0011644D /* ToDoListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE15342BC034FD0011644D /* ToDoListAppApp.swift */; };
 		2DFE15372BC034FD0011644D /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE15362BC034FD0011644D /* LandingView.swift */; };
 		2DFE15392BC034FF0011644D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE15382BC034FF0011644D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		2D1C3B3F2BC46D4700E8E3C1 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		2D1C3B412BC46E2600E8E3C1 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		2D1C3B432BC5CCFD00E8E3C1 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		2DFE15312BC034FD0011644D /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFE15342BC034FD0011644D /* ToDoListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListAppApp.swift; sourceTree = "<group>"; };
 		2DFE15362BC034FD0011644D /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		2D1C3B3C2BC468F100E8E3C1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2D1C3B432BC5CCFD00E8E3C1 /* Functions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				2DFE15372BC034FD0011644D /* LandingView.swift in Sources */,
 				2D1C3B402BC46D4700E8E3C1 /* ItemView.swift in Sources */,
 				2D1C3B422BC46E2600E8E3C1 /* TodoItem.swift in Sources */,
+				2D1C3B442BC5CCFD00E8E3C1 /* Functions.swift in Sources */,
 				2DFE15352BC034FD0011644D /* ToDoListAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

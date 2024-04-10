@@ -42,6 +42,7 @@ struct LandingView: View {
                     Button("ADD") {
                         // Add the new to-do item
                         createToDo(withTitle: newItemDescription)
+                        newItemDescription = ""
                     }
                     .font(.caption)
                     .disabled(newItemDescription.isEmpty == true)
@@ -49,6 +50,9 @@ struct LandingView: View {
                 .padding(20)
             }
             .navigationTitle("To do")
+            .onAppear {
+                printCommandToOpenDatabaseFile()
+            }
         }
     }
     
