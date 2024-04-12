@@ -79,6 +79,7 @@ struct LandingView: View {
     }
 }
 
-//#Preview {
-//    LandingView()
-//}
+#Preview {
+    LandingView()
+        .modelContainer(TodoItem.preview)
+}
